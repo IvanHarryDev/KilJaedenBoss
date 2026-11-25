@@ -1,0 +1,1310 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.kil_jaeden.main": {
+      "initial_state": "statue",
+      "states": {
+        "dead": {
+          "animations": [
+            "death"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "statue": {
+          "animations": [
+            "statue"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "inter_enter": {
+          "animations": [
+            "enter_intermission"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "inter_idle": {
+          "animations": [
+            "intermission_idle"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "inter_channel": {
+          "animations": [
+            "intermission_channel"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "inter_exit": {
+          "animations": [
+            "exit_intermission"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_cast_spell": {
+          "animations": [
+            "cast_spell"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_cast_spell_2": {
+          "animations": [
+            "cast_spell_2"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_unleash_fel": {
+          "animations": [
+            "unleash_fel"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_summon": {
+          "animations": [
+            "summon_felfire_spirits"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_carrion": {
+          "animations": [
+            "carrion_swarm"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_beam": {
+          "animations": [
+            "medallion_beam"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_stomp": {
+          "animations": [
+            "fel_stomp"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_knockback": {
+          "animations": [
+            "knockback"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "a_vanish": {
+          "animations": [
+            "vanish_teleport"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "talk": {
+          "animations": [
+            "idle_talking"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "combat_walk": {
+          "animations": [
+            "walk_combat"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "combat_idle": {
+          "animations": [
+            "idle_combat"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "calm_walk": {
+          "animations": [
+            "walk"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_idle": "q.property('kj:mode') == 'calm'"
+            }
+          ]
+        },
+        "calm_idle": {
+          "animations": [
+            "idle"
+          ],
+          "blend_transition": 0.15,
+          "transitions": [
+            {
+              "dead": "q.property('kj:mode') == 'dead'"
+            },
+            {
+              "statue": "q.property('kj:mode') == 'statue'"
+            },
+            {
+              "inter_enter": "q.property('kj:mode') == 'inter_enter'"
+            },
+            {
+              "inter_idle": "q.property('kj:mode') == 'inter_idle'"
+            },
+            {
+              "inter_channel": "q.property('kj:mode') == 'inter_channel'"
+            },
+            {
+              "inter_exit": "q.property('kj:mode') == 'inter_exit'"
+            },
+            {
+              "a_cast_spell": "q.property('kj:action') == 'cast_spell'"
+            },
+            {
+              "a_cast_spell_2": "q.property('kj:action') == 'cast_spell_2'"
+            },
+            {
+              "a_unleash_fel": "q.property('kj:action') == 'unleash_fel'"
+            },
+            {
+              "a_summon": "q.property('kj:action') == 'summon'"
+            },
+            {
+              "a_carrion": "q.property('kj:action') == 'carrion'"
+            },
+            {
+              "a_beam": "q.property('kj:action') == 'beam'"
+            },
+            {
+              "a_stomp": "q.property('kj:action') == 'stomp'"
+            },
+            {
+              "a_knockback": "q.property('kj:action') == 'knockback'"
+            },
+            {
+              "a_vanish": "q.property('kj:action') == 'vanish'"
+            },
+            {
+              "talk": "q.property('kj:mode') == 'calm' && q.property('kj:action') == 'talk'"
+            },
+            {
+              "combat_walk": "q.property('kj:mode') == 'combat' && q.ground_speed > 0.2"
+            },
+            {
+              "combat_idle": "q.property('kj:mode') == 'combat'"
+            },
+            {
+              "calm_walk": "q.property('kj:mode') == 'calm' && q.ground_speed > 0.2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

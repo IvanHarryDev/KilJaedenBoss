@@ -1,0 +1,71 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Harry"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "KilJaedenBoss",
+		"description": "",
+		"min_engine_version": [
+			1,
+			26,
+			0
+		],
+		"uuid": "01baf83d-5dfa-42a6-83bb-b47551722e9a",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "05025b88-bccc-434a-bcf4-6d36046bea75",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "c23ed573-0468-4c10-8be6-d2fa6a4bb5c2",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "f5f9f864-240d-486b-8026-b9d65a10a2d2",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.9.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.1.0"
+		}
+	]
+}

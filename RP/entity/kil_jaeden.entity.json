@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "kj:kil_jaeden",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/kil_jaeden"
+      },
+      "geometry": {
+        "default": "geometry.kil_jaeden"
+      },
+      "animations": {
+        "idle": "animation.kil_jaeden.idle",
+        "walk": "animation.kil_jaeden.walk",
+        "idle_talking": "animation.kil_jaeden.idle_talking",
+        "idle_combat": "animation.kil_jaeden.idle_combat",
+        "walk_combat": "animation.kil_jaeden.walk_combat",
+        "enter_intermission": "animation.kil_jaeden.enter_intermission",
+        "intermission_idle": "animation.kil_jaeden.intermission_idle",
+        "intermission_channel": "animation.kil_jaeden.intermission_channel",
+        "exit_intermission": "animation.kil_jaeden.exit_intermission",
+        "vanish_teleport": "animation.kil_jaeden.vanish_teleport",
+        "cast_spell": "animation.kil_jaeden.cast_spell",
+        "cast_spell_2": "animation.kil_jaeden.cast_spell_2",
+        "unleash_fel": "animation.kil_jaeden.unleash_fel",
+        "summon_felfire_spirits": "animation.kil_jaeden.summon_felfire_spirits",
+        "carrion_swarm": "animation.kil_jaeden.carrion_swarm",
+        "medallion_beam": "animation.kil_jaeden.medallion_beam",
+        "fel_stomp": "animation.kil_jaeden.fel_stomp",
+        "knockback": "animation.kil_jaeden.knockback",
+        "death": "animation.kil_jaeden.death",
+        "statue": "animation.kil_jaeden.statue",
+        "main": "controller.animation.kil_jaeden.main"
+      },
+      "scripts": {
+        "animate": [
+          "main"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.kj_default"
+      ],
+      "spawn_egg": {
+        "base_color": "#2a0a4a",
+        "overlay_color": "#7dff3a"
+      }
+    }
+  }
+}

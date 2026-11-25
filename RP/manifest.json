@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Harry"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.54"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "KilJaedenBoss",
+		"description": "",
+		"min_engine_version": [
+			1,
+			26,
+			0
+		],
+		"uuid": "f5f9f864-240d-486b-8026-b9d65a10a2d2",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "94dacdd2-59c0-4fbb-b155-9f1da66721f8",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "01baf83d-5dfa-42a6-83bb-b47551722e9a",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
