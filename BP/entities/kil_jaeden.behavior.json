@@ -1,0 +1,244 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kj:kil_jaeden",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "kj:mode": {
+          "type": "enum",
+          "values": [
+            "statue",
+            "calm",
+            "combat",
+            "inter_enter",
+            "inter_idle",
+            "inter_channel",
+            "inter_exit",
+            "dead"
+          ],
+          "default": "statue",
+          "client_sync": true
+        },
+        "kj:action": {
+          "type": "enum",
+          "values": [
+            "none",
+            "talk",
+            "cast_spell",
+            "cast_spell_2",
+            "unleash_fel",
+            "summon",
+            "carrion",
+            "beam",
+            "stomp",
+            "knockback",
+            "vanish"
+          ],
+          "default": "none",
+          "client_sync": true
+        },
+        "kj:phase": {
+          "type": "int",
+          "range": [
+            0,
+            3
+          ],
+          "default": 0,
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "kj:diff_normal": {
+        "minecraft:health": {
+          "value": 1200,
+          "max": 1200
+        }
+      },
+      "kj:diff_heroic": {
+        "minecraft:health": {
+          "value": 2000,
+          "max": 2000
+        }
+      },
+      "kj:diff_mythic": {
+        "minecraft:health": {
+          "value": 3200,
+          "max": 3200
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "kj_boss",
+          "monster",
+          "demon"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 3.5,
+        "height": 10
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:persistent": {},
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:boss": {
+        "hud_range": 64,
+        "name": "Kil'jaeden",
+        "should_darken_sky": false
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/kil_jaeden.json"
+      },
+      "minecraft:movement": {
+        "value": 0.26
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:attack": {
+        "damage": 14
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": false,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 48
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.1,
+        "track_target": true
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 24
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": "no",
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "kj:mode",
+                    "value": "statue"
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "kj:mode",
+                    "value": "inter_enter"
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "kj:mode",
+                    "value": "inter_idle"
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "kj:mode",
+                    "value": "inter_channel"
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "kj:mode",
+                    "value": "inter_exit"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "kj:diff_normal"
+          ]
+        }
+      },
+      "kj:set_normal": {
+        "remove": {
+          "component_groups": [
+            "kj:diff_heroic",
+            "kj:diff_mythic"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "kj:diff_normal"
+          ]
+        }
+      },
+      "kj:set_heroic": {
+        "remove": {
+          "component_groups": [
+            "kj:diff_normal",
+            "kj:diff_mythic"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "kj:diff_heroic"
+          ]
+        }
+      },
+      "kj:set_mythic": {
+        "remove": {
+          "component_groups": [
+            "kj:diff_normal",
+            "kj:diff_heroic"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "kj:diff_mythic"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "kj:mini_dragon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/mini_dragon"
+      },
+      "geometry": {
+        "default": "geometry.mini_dragon"
+      },
+      "animations": {
+        "pose": "animation.mini_dragon.pose"
+      },
+      "scripts": {
+        "animate": [
+          "pose"
+        ],
+        "scale": "1.5"
+      },
+      "render_controllers": [
+        "controller.render.kj_default"
+      ]
+    }
+  }
+}

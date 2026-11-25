@@ -1,4 +1,185 @@
 {
-	"format_version": "1.14.0",
-	"sound_definitions": {}
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "kj.boss.awaken": {
+      "category": "hostile",
+      "max_distance": 96,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/awaken",
+          "volume": 1.0,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.cast": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/cast",
+          "volume": 0.9,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.bolt_hit": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/bolt_hit",
+          "volume": 1.0,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.summon": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/summon",
+          "volume": 0.9,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.fel_wave": {
+      "category": "hostile",
+      "max_distance": 80,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/fel_wave",
+          "volume": 1.0,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.stomp": {
+      "category": "hostile",
+      "max_distance": 80,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/stomp",
+          "volume": 1.0,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.beam": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/beam",
+          "volume": 0.7,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.vanish": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/vanish",
+          "volume": 0.9,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.phase": {
+      "category": "hostile",
+      "max_distance": 96,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/phase",
+          "volume": 1.0,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.boss.death": {
+      "category": "hostile",
+      "max_distance": 96,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/death",
+          "volume": 1.0,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.dragon.fire": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/dragon_fire",
+          "volume": 0.8,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    },
+    "kj.dragon.spawn": {
+      "category": "hostile",
+      "max_distance": 64,
+      "min_distance": 4,
+      "sounds": [
+        {
+          "name": "sounds/kj/dragon_spawn",
+          "volume": 0.8,
+          "pitch": [
+            0.95,
+            1.05
+          ]
+        }
+      ]
+    }
+  }
 }

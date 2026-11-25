@@ -4,13 +4,15 @@
     "description": {
       "identifier": "kj:kil_jaeden",
       "materials": {
-        "default": "entity_alphatest"
+        "default": "entity_alphatest",
+        "glow": "entity_emissive_alpha"
       },
       "textures": {
-        "default": "textures/entity/kil_jaeden"
+        "default": "textures/entity/kil_jaeden",
+        "glow": "textures/entity/kil_jaeden_glow"
       },
       "geometry": {
-        "default": "geometry.kil_jaeden"
+        "default": "geometry.kil-jaeden"
       },
       "animations": {
         "idle": "animation.kil_jaeden.idle",
@@ -41,7 +43,10 @@
         ]
       },
       "render_controllers": [
-        "controller.render.kj_default"
+        "controller.render.kj_default",
+        {
+          "controller.render.kj_boss_glow": "q.property('kj:mode') != 'statue'"
+        }
       ],
       "spawn_egg": {
         "base_color": "#2a0a4a",
